@@ -16,7 +16,6 @@
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:text="Wrong :("
         android:textSize="50sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -68,9 +67,8 @@
             android:layout_weight="1"
             android:background="#cddea2"
             android:gravity="center"
-            android:text="TextView"
-            android:textSize="40sp"
-            tools:text="23s" />
+            android:text="30s"
+            android:textSize="40sp" />
 
         <TextView
             android:id="@+id/equationTextView"
@@ -90,7 +88,7 @@
             android:layout_weight="1"
             android:background="@android:color/holo_blue_light"
             android:gravity="center"
-            android:text="20/20"
+            android:text="0/0"
             android:textSize="40sp" />
     </LinearLayout>
 
@@ -115,6 +113,7 @@
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:background="@android:color/holo_green_light"
+            android:onClick="answerClick"
             android:tag="0"
             android:text="2"
             android:textSize="60sp"
@@ -128,6 +127,7 @@
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:background="@android:color/holo_blue_bright"
+            android:onClick="answerClick"
             android:tag="1"
             android:text="20"
             android:textSize="60sp"
@@ -141,6 +141,7 @@
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:background="@android:color/holo_red_light"
+            android:onClick="answerClick"
             android:tag="2"
             android:text="42"
             android:textSize="60sp"
@@ -154,6 +155,7 @@
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:background="@android:color/holo_orange_light"
+            android:onClick="answerClick"
             android:tag="3"
             android:text="15"
             android:textSize="60sp"
@@ -173,6 +175,7 @@
         android:layout_marginRight="162dp"
         android:layout_marginStart="162dp"
         android:layout_marginTop="80dp"
+        android:onClick="reset"
         android:text="Play Again!"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

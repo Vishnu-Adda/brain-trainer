@@ -26,12 +26,13 @@ public class Answer {
     public void setAnswer(int theAnswer) {
 
         answer = theAnswer;
+        setText();
 
     }
 
-    public void setText(int theAnswer) {
+    public void setText() {
 
-        answer = theAnswer;
+        answerButton.setText(Integer.toString(answer));
 
     }
 
@@ -41,6 +42,16 @@ public class Answer {
             answerButton.setVisibility(View.VISIBLE);
         } else {
             answerButton.setVisibility(View.INVISIBLE);
+        }
+
+    }
+
+    public void setClickable(boolean clickable) {
+
+        if(clickable) {
+            answerButton.setEnabled(true);
+        } else {
+            answerButton.setEnabled(false);
         }
 
     }

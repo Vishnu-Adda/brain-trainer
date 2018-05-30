@@ -55,7 +55,7 @@ public class Equation {
 
     }
 
-    public void setVisiblity(boolean visible) {
+    public void setVisibility(boolean visible) {
 
         if(visible) {
             equationView.setVisibility(View.VISIBLE);
